@@ -43,16 +43,16 @@ console.log(`Normalize ${path.normalize("/path/to/file/../")}`) // Normalize /pa
 
 ### Synchronous version
 
-| Operation      |                                          Description                                          |
-| -------------- | :-------------------------------------------------------------------------------------------: |
-| `readFile()`   |                             reads the file content asynchronously                             |
-| `appendFile()` |               adds data to file if it exist - if not then file is created first               |
-| `copyFile()`   |                                        copies the file                                        |
-| `readdir()`    |                               reads the content of a directory                                |
-| `mkdir()`      |                                    creates a new directory                                    |
-| `rename()`     |                                   renames a file or folder                                    |
-| `stat()`       | returns the stats of the file like when it was created, how big it is in Bytes and other info |
-| `access()`     |                        check if file exists and if it can be accessed                         |
+|      Operation | Description                                                                                   |
+| -------------: | :-------------------------------------------------------------------------------------------- |
+|   `readFile()` | reads the file content asynchronously                                                         |
+| `appendFile()` | adds data to file if it exist - if not then file is created first                             |
+|   `copyFile()` | copies the file                                                                               |
+|    `readdir()` | reads the content of a directory                                                              |
+|      `mkdir()` | creates a new directory                                                                       |
+|     `rename()` | renames a file or folder                                                                      |
+|       `stat()` | returns the stats of the file like when it was created, how big it is in Bytes and other info |
+|     `access()` | check if file exists and if it can be accessed                                                |
 
 ### Asynchronous version
 
