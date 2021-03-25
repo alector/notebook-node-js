@@ -1,6 +1,6 @@
 # Title of text
 
-> Interesting source: How YOU can learn Node.js I/O, files and paths https://softchris.github.io/pages/javascript-node-io.html#summary
+> Interesting source: **How YOU can learn Node.js I/O, files and paths** https://softchris.github.io/pages/javascript-node-io.html#summary
 
 ## Path
 
@@ -57,3 +57,30 @@ console.log(`Normalize ${path.normalize("/path/to/file/../")}`) // Normalize /pa
 ### Asynchronous version
 
 > All the above methods exist as synchronous versions as well. All you need to do is to **append the Sync at the end**, for example `readFileSync()`.
+
+## Async vs. Sync: What is the problem with synchronous operations?
+
+- Node.js is single-threaded.
+- The consequence of running synchronous operations are therefore that we are blocking anything else from happening.
+- This results in much less throughput than if your app was written in an asynchronous way.
+- In a synchronous operation, you are effectively stopping anything else from happening, this might make your program less responsive.
+- An Asynchronous operation is non-blocking.
+
+(source: softchris.github.io)
+
+## Get the Path of the Current Working Directory in Node.js
+
+> Source: https://coderrocketfuel.com/article/get-the-path-of-the-current-working-directory-in-node-js
+
+### Method 1: `__dirname`
+
+```js
+console.log(__dirname) //  /Users/Billy_Bob/projects
+const b = path.dirname(myFilename)
+```
+
+### Method 2: `process.cwd()`
+
+```js
+console.log(process.cwd())
+```
