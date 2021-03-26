@@ -84,3 +84,16 @@ const b = path.dirname(myFilename)
 ```js
 console.log(process.cwd())
 ```
+
+## Make a new empty directory (folder)
+
+> source: https://www.digitalocean.com/community/tutorials/nodejs-how-to-use__dirname
+
+```js
+// Make new folder
+const fs = require("fs")
+// const path = require("path")
+const dirPath = path.join(__dirname, "new-folder") ///  full absolute path to the txt
+
+fs.mkdirSync(dirPath)
+```
